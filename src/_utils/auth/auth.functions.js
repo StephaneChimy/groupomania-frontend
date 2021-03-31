@@ -28,6 +28,7 @@ function getEmailFromCrypto(email) {
 function isLogged() {
   const loggedIn = Cookies.get("groupomania");
   if (loggedIn === "true") {
+    console.log("logged");
     return true;
   } else {
     return false;
