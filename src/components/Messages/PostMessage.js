@@ -20,7 +20,7 @@ const PostMessage = ({ onPost }) => {
         content: contentValue,
       }),
     };
-    await fetch("http://localhost:3000/api/messages/new", requestOptions)
+    await fetch("https://sc-groupomania-backend.herokuapp.com/api/messages/new", requestOptions)
       .then((response) => {
         if (response.status !== 201) {
 

@@ -22,7 +22,7 @@ const EditAccount = ({ ...account }) => {
         surname: surnameValue,
       }),
     };
-    fetch(`http://localhost:3000/api/auth/account/${id}`, requestOptions)
+    fetch(`https://sc-groupomania-backend.herokuapp.com/api/auth/account/${id}`, requestOptions)
       .then((response) => {
         console.log(response.json());
         if (response.ok) {

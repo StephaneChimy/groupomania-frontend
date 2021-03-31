@@ -30,7 +30,7 @@ const LoginForm = ({ onLogin }) => {
     };
     console.log(requestOptions);
 
-    fetch("http://localhost:3000/api/auth/login", requestOptions)
+    fetch("https://sc-groupomania-backend.herokuapp.com/api/auth/login", requestOptions)
       .then((response) => {
         if (response.status === 200) {
           // Redirect
