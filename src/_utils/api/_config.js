@@ -1,5 +1,5 @@
 const config ={
-     BASE_API : "https://sc-groupomania-backend.herokuapp.com/api/"
+     BASE_API : "http://localhost:3000/api/"
 }
 
 export default config;
