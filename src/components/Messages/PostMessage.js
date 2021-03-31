@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { toastMessagePosted } from "../../_utils/toasts/messages";
 import "react-toastify/dist/ReactToastify.css";
-import { REGEX } from "../../_utils/auth/auth.functions";
+import { REGEX } from "../../_utils/auth/authFunctions";
 
 const PostMessage = ({ onPost }) => {
   const [titleValue, setTitleValue] = useState("");

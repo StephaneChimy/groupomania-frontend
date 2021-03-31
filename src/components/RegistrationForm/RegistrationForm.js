@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import logo from "../../images/icon-above-font.png";
 import { userRegistered } from "../../_utils/toasts/users";
-import {REGEX} from "../../_utils/auth/auth.functions"
+import {REGEX} from "../../_utils/auth/authFunctions"
 
 const RegistrationForm = () => {
   const [emailValue, setEmailValue] = useState("");

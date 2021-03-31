@@ -3,7 +3,7 @@ import Account from "./Account";
 import AccountEdit from "./AccountEdit";
 import AccountMessagesContainer from "./AccountMessagesContainer";
 import { useParams } from "react-router-dom";
-import { getAccount } from "../../_utils/auth/auth.functions";
+import { getAccount } from "../../_utils/auth/authFunctions";
 import { NoUserFound } from "../Infos/NotFound";
 
 const AccountContainer = (params) => {

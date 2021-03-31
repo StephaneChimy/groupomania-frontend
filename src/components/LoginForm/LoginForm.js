@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import logo from "../../images/icon-above-font.png";
-import {isLogged} from "../../_utils/auth/auth.functions";
+import {isLogged} from "../../_utils/auth/authFunctions";
 import { userConnected } from "../../_utils/toasts/users";
 
 const LoginForm = ({ onLogin }) => {

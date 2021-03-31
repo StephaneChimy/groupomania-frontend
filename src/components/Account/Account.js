@@ -3,7 +3,7 @@ import {
   getEmailFromCrypto,
   deleteAccount,
   logout,
-} from "../../_utils/auth/auth.functions";
+} from "../../_utils/auth/authFunctions";
 import { userDeleted } from "../../_utils/toasts/users";
 import { useHistory } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { getEmailFromCrypto, REGEX } from "../../_utils/auth/auth.functions";
+import { getEmailFromCrypto, REGEX } from "../../_utils/auth/authFunctions";
 import { userModified } from "../../_utils/toasts/users";
 
 const EditAccount = ({ ...account }) => {
