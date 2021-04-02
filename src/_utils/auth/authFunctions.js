@@ -27,16 +27,19 @@ function getEmailFromCrypto(email) {
 
 function isLogged() {
   const loggedIn = Cookies.get("groupomania");
+  console.log(Cookies.get());
   if (loggedIn === "true") {
     console.log("logged");
     return true;
   } else {
+    console.log("NOT logged");
     return false;
   }
 }
 
 function getIdFromCookie() {
   const groupomaniaId = Cookies.get("groupomaniaId");
+  console.log("looking for groupomaniaId");
   if (groupomaniaId) {
     return groupomaniaId;
   } else {
@@ -52,6 +55,7 @@ function logout(page) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
+    crossDomain: true,
   };
   console.log(requestOptions);
   return fetchApi("auth/logout", page, requestOptions)
@@ -68,6 +72,7 @@ const getAccount = (accountId, page) => {
   const requestOptions = {
     method: "GET",
     credentials: "include",
+    crossDomain: true,
   };
   return fetchApi(`auth/account/${accountId}`, page, requestOptions);
 };
@@ -77,10 +82,10 @@ const deleteAccount = (accountId, page) => {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
+    crossDomain: true,
   };
 
-  return fetchApi(`auth/account/${accountId}`, page, requestOptions)
-    
+  return fetchApi(`auth/account/${accountId}`, page, requestOptions);
 };
 
 export {

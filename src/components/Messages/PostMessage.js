@@ -15,6 +15,7 @@ const PostMessage = ({ onPost }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
+      crossDomain:true,
       body: JSON.stringify({
         title: titleValue,
         content: contentValue,
