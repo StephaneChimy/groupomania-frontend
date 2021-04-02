@@ -19,7 +19,7 @@ const RegistrationForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
-      crossDomain:true,
+      
       body: JSON.stringify({
         name: firstnameValue,
         surname: surnameValue,

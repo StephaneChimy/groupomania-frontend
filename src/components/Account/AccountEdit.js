@@ -17,7 +17,7 @@ const EditAccount = ({ ...account }) => {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
-      crossDomain:true,
+      
       body: JSON.stringify({
         name: firstnameValue,
         surname: surnameValue,

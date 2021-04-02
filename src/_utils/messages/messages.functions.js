@@ -6,7 +6,7 @@ const getMessages = (page) => {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    crossDomain:true,
+    
   };
 
   return fetchApi(`messages`, page, requestOptions);
@@ -17,7 +17,7 @@ const getAllUserMessages = (userId, page) => {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    crossDomain:true,
+    
   };
 
   return fetchApi(`messages/userMessages/${userId}`, page, requestOptions);
@@ -28,7 +28,7 @@ const getOneMessage = (messageId, page) => {
     method: "GET",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    crossDomain:true,
+    
   };
 
   return fetchApi(`messages/${messageId}`, page, requestOptions);
@@ -39,7 +39,7 @@ const deleteOneMessage = (messageId, page) => {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    crossDomain:true,
+    
   };
 
   return fetchApi(`messages/${messageId}`, page, requestOptions)

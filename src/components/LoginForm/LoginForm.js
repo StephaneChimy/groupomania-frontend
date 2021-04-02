@@ -23,7 +23,7 @@ const LoginForm = ({ onLogin }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
-      crossDomain:true,
+      
       body: JSON.stringify({
         email: emailValue,
         password: passwordValue,
