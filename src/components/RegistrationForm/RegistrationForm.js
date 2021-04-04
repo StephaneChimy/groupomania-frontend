@@ -19,6 +19,7 @@ const RegistrationForm = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
+      crossDomain: true,
       
       body: JSON.stringify({
         name: firstnameValue,
@@ -27,7 +28,7 @@ const RegistrationForm = () => {
         password: passwordValue,
       }),
     };
-    fetch("https://sc-groupomania-backend.herokuapp.com/api/auth/signup", requestOptions)
+    fetch("http://groupomania-backend.stephane-chimy.com/api/auth/signup", requestOptions)
       .then((response) => {
         console.log(response.json());
         if (response.ok) {

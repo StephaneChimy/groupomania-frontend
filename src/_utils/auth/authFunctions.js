@@ -41,6 +41,7 @@ function getIdFromCookie() {
   const groupomaniaId = Cookies.get("groupomaniaId");
   console.log("looking for groupomaniaId");
   if (groupomaniaId) {
+    console.log("got an ID")
     return groupomaniaId;
   } else {
     return false;
@@ -55,7 +56,7 @@ function logout(page) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    
+    crossDomain: true,
   };
   console.log(requestOptions);
   return fetchApi("auth/logout", page, requestOptions)
@@ -72,7 +73,7 @@ const getAccount = (accountId, page) => {
   const requestOptions = {
     method: "GET",
     credentials: "include",
-    
+    crossDomain: true,
   };
   return fetchApi(`auth/account/${accountId}`, page, requestOptions);
 };
@@ -82,7 +83,7 @@ const deleteAccount = (accountId, page) => {
     method: "DELETE",
     headers: { "Content-Type": "application/json" },
     credentials: "include",
-    
+    crossDomain: true,
   };
 
   return fetchApi(`auth/account/${accountId}`, page, requestOptions);

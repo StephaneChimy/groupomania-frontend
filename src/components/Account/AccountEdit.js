@@ -17,13 +17,14 @@ const EditAccount = ({ ...account }) => {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
+      crossDomain: true,
       
       body: JSON.stringify({
         name: firstnameValue,
         surname: surnameValue,
       }),
     };
-    fetch(`https://sc-groupomania-backend.herokuapp.com/api/auth/account/${id}`, requestOptions)
+    fetch(`http://groupomania-backend.stephane-chimy.com/api/auth/account/${id}`, requestOptions)
       .then((response) => {
         console.log(response.json());
         if (response.ok) {

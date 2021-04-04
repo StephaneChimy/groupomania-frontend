@@ -15,13 +15,14 @@ const PostMessage = ({ onPost }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
+      crossDomain: true,
       
       body: JSON.stringify({
         title: titleValue,
         content: contentValue,
       }),
     };
-    await fetch("https://sc-groupomania-backend.herokuapp.com/api/messages/new", requestOptions)
+    await fetch("http://groupomania-backend.stephane-chimy.com/api/messages/new", requestOptions)
       .then((response) => {
         if (response.status !== 201) {
 

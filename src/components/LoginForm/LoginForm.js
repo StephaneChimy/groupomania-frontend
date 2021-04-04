@@ -23,6 +23,7 @@ const LoginForm = ({ onLogin }) => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",
+      crossDomain: true,
       
       body: JSON.stringify({
         email: emailValue,
@@ -31,13 +32,14 @@ const LoginForm = ({ onLogin }) => {
     };
     console.log(requestOptions);
 
-    fetch("https://sc-groupomania-backend.herokuapp.com/api/auth/login", requestOptions)
+    fetch("http://groupomania-backend.stephane-chimy.com/api/auth/login", requestOptions)
       .then((response) => {
         if (response.status === 200) {
+          onLogin();
           // Redirect
           history.push("/");
           // Will update Header state
-          onLogin();
+          
           userConnected();
         }
       })
