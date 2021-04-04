@@ -32,7 +32,7 @@ const LoginForm = ({ onLogin }) => {
     };
     console.log(requestOptions);
 
-    fetch("http://groupomania-backend.stephane-chimy.com/api/auth/login", requestOptions)
+    fetch("https://groupomania-backend.ew.r.appspot.com/api/auth/login", requestOptions)
       .then((response) => {
         if (response.status === 200) {
           onLogin();

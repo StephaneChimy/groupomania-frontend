@@ -24,7 +24,7 @@ const EditAccount = ({ ...account }) => {
         surname: surnameValue,
       }),
     };
-    fetch(`http://groupomania-backend.stephane-chimy.com/api/auth/account/${id}`, requestOptions)
+    fetch(`https://groupomania-backend.ew.r.appspot.com/api/auth/account/${id}`, requestOptions)
       .then((response) => {
         console.log(response.json());
         if (response.ok) {
