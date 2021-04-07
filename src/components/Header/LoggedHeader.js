@@ -1,17 +1,17 @@
 import logo from "../../images/icon.png";
 import {logout} from "../../_utils/auth/authFunctions";
 import {getIdFromCookie} from "../../_utils/auth/authFunctions";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const LoggedHeader = ({ onLogout }) => {
   const idFromCookie = getIdFromCookie();
-  // const history = useHistory();
+  const history = useHistory();
 
   const onClickLogout = (e) => {
     e.preventDefault();
     logout();
-    // onLogout();
-    // history.push("/");
+    onLogout();
+    history.push("/");
   };
 
   return (
