@@ -10,8 +10,8 @@ const LoggedHeader = ({ onLogout }) => {
   const onClickLogout = (e) => {
     e.preventDefault();
     logout();
-    onLogout();
-    history.push("/");
+    // onLogout();
+    // history.push("/");
   };
 
   return (
