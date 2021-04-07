@@ -49,8 +49,8 @@ function getIdFromCookie() {
 }
 
 function logout(page) {
-  Cookies.remove("groupomania");
-  Cookies.remove("groupomaniaId");
+  Cookies.remove("groupomania",{ domain: '.stephane-chimy.com' });
+  Cookies.remove("groupomaniaId",{ domain: '.stephane-chimy.com' });
 
   const requestOptions = {
     method: "POST",
