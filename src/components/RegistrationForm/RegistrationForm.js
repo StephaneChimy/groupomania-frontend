@@ -28,7 +28,7 @@ const RegistrationForm = () => {
         password: passwordValue,
       }),
     };
-    fetch("https://groupomania-backend.ew.r.appspot.com/api/auth/signup", requestOptions)
+    fetch("https://groupomania-backend.stephane-chimy.com/api/auth/signup", requestOptions)
       .then((response) => {
         console.log(response.json());
         if (response.ok) {

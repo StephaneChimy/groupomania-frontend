@@ -22,7 +22,7 @@ const PostMessage = ({ onPost }) => {
         content: contentValue,
       }),
     };
-    await fetch("https://groupomania-backend.ew.r.appspot.com/api/messages/new", requestOptions)
+    await fetch("https://groupomania-backend.stephane-chimy.com/api/messages/new", requestOptions)
       .then((response) => {
         if (response.status !== 201) {
 

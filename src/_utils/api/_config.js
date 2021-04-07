@@ -1,5 +1,5 @@
 const config ={
-     BASE_API : "https://groupomania-backend.ew.r.appspot.com/api/"
+     BASE_API : "https://groupomania-backend.stephane-chimy.com/api/"
 }
 
 export default config;
