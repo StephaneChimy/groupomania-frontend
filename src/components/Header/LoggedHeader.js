@@ -25,7 +25,7 @@ const LoggedHeader = ({ onLogout }) => {
           <a className="navbar-brand" href={"/account/" + idFromCookie}>
             Account
           </a>
-          <a className="navbar-brand" href="/login" onClick={onClickLogout}>
+          <a className="navbar-brand" href="#" onClick={onClickLogout}>
             Logout
           </a>
         </div>
