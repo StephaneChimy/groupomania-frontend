@@ -12,7 +12,7 @@ const Message = ({ ...message }) => {
   };
 
   return (
-    <div className="card">
+    <div className="card shadow-sm">
       <div className="card-header">
         <div className="justify-content-between align-items-center">
           <div className="justify-content-between align-items-center">
