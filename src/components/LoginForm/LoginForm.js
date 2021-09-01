@@ -48,7 +48,7 @@ const LoginForm = ({ onLogin }) => {
 
   return (
     <section className="row mx-auto justify-content-center">
-      <div className="card col-md-5">
+      <div className="card col-md-5 shadow mb-4">
         <img className="card-img-top mx-auto" src={logo} alt="logo and name of the company Groupomania" />
         <div className="card-body">
           <h2 className="h5 card-title text-center">Login</h2>
